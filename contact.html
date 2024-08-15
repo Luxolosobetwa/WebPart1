@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - The Groove Mode</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+        .page-description {
+            background-color: #e2e2e2;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        .page-description h2 {
+            margin-top: 0;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .contact-section {
+            flex: 1 1 calc(33% - 40px);
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-section h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .contact-section p {
+            color: #666;
+        }
+        .contact-section a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .contact-section a:hover {
+            color: #555;
+        }
+        .contact-form {
+            margin-top: 40px;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sales.html">sales</a>
+            <a href="checkout.html">checkout</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="about.html">about</a>
+        </nav>
+        Contact Us
+    </header>
+
+    <div class="container">
+        <!-- Page Description -->
+        <div class="page-description">
+            <h2>Get in Touch with The Groove Mode</h2>
+            <p>We value your feedback and are here to assist you with any inquiries, concerns, or support you may need. Whether you're looking for more information about our products, need assistance with your order, or just want to say hello, feel free to reach out to us through any of the methods below. Our team is dedicated to providing you with the best possible service.</p>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <div class="contact-section">
+                <h3>Email Us</h3>
+                <p>For general inquiries, please email us at:</p>
+                <p><a href="mailto:support@groovemode.com">support@groovemode.com</a></p>
+            </div>
+            <div class="contact-section">
+                <h3>Call Us</h3>
+                <p>Our customer service team is available Monday to Friday, 9 AM to 5 PM:</p>
+                <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            </div>
+            <div class="contact-section">
+                <h3>Visit Our Store</h3>
+                <p>Come visit us at our physical location:</p>
+                <p>123 Groove Mode Street, Suite 100<br>City, State, 12345</p>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="6" placeholder="Enter your message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 The Groove Mode | All Rights Reserved
+    </footer>
+
+</body>
+</html>
