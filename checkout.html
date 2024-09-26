@@ -4,78 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header, footer {
-            background-color: #333;
-            color: #fff;
-            padding: 15px;
-            text-align: center;
-        }
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: #fff;
-        }
-        .website-description {
-            background-color: #e2e2e2;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-        }
-        .order-summary {
-            margin-bottom: 30px;
-        }
-        .order-item {
-            display: flex;
-            align-items: center;
-            padding: 20px 0;
-            border-bottom: 1px solid #ddd;
-        }
-        .order-item img {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            border-radius: 5px;
-            margin-right: 20px;
-        }
-        .item-details {
-            flex-grow: 1;
-        }
-        .item-name {
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .item-price {
-            font-size: 18px;
-            font-weight: bold;
-            color: #333;
-        }
-        .total-price {
-            font-size: 24px;
-            font-weight: bold;
-            margin: 20px 0;
-            text-align: right;
-        }
-        .link {
-            display: inline-block;
-            margin: 10px 0;
-            padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .link:hover {
-            background-color: #555;
-        }
+       
     </style>
 </head>
 
@@ -83,6 +14,17 @@
     <header>
         Checkout Page
     </header>
+
+    <!-- Top Navigation -->
+    <div class="top-nav">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sales.html">Sales</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About</a>
+        </nav>
+    </div>
 
     <div class="container">
         <!-- Website Description -->
@@ -95,23 +37,23 @@
         <h2>Your Order Summary</h2>
         <div class="order-summary">
             <div class="order-item">
-                <img src="https://via.placeholder.com/100" alt="Stylish caps">
+                <img src="_images/cap.jpg" alt="Classic Groove Cap">
                 <div class="item-details">
-                    <div class="item-name">Stylish caps</div>
+                    <div class="item-name">Stylish Caps</div>
                     <div class="item-description">High-quality caps with superior sound and comfort.</div>
                 </div>
                 <div class="item-price">R300</div>
             </div>
             <div class="order-item">
-                <img src="https://via.placeholder.com/100" alt="Classic t shit">
+                <img src="../_images/tshirt.jpg" alt="Summer Vibes T-Shirt">
                 <div class="item-details">
-                    <div class="item-name">Classic t shirt</div>
-                    <div class="item-description">A timeless classic t shirt.</div>
+                    <div class="item-name">Classic T-Shirt</div>
+                    <div class="item-description">A timeless classic t-shirt.</div>
                 </div>
                 <div class="item-price">R600</div>
             </div>
             <div class="order-item">
-                <img src="https://via.placeholder.com/100" alt="Groove Mode T-Shirt">
+                <img src="_images/shorts.jpg" alt="Casual Shorts">
                 <div class="item-details">
                     <div class="item-name">Groove Mode T-Shirt</div>
                     <div class="item-description">Comfortable and stylish, representing your love for music.</div>
@@ -124,23 +66,14 @@
         <div class="total-price">
             Total Price: R1400
         </div>
-        
-    <header>
-        <nav>
-            <!-- Navigation Links -->
-            <a href="index.html">Home</a>
-            <a href="sales.html">sales</a>
-            <a href="checkout.html">checkout</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="about.html">about</a>
-        </nav>
-    </header>
 
-        <!-- Navigation Links -->
-        <a href="index.html" class="link">homepage</a>
-        <a href="contact.html" class="link">Contact Us</a>
-        <a href="sales.html" class="link">sales</a>
-        <a href="about.html" class="link">about</a>
+        <!-- Bottom Navigation -->
+        <div class="bottom-nav">
+            <a href="index.html" class="link">Home</a>
+            <a href="contact.html" class="link">Contact Us</a>
+            <a href="sales.html" class="link">Sales</a>
+            <a href="about.html" class="link">About</a>
+        </div>
     </div>
 
     <footer>

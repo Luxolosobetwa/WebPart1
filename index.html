@@ -5,172 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Groove Mode Boutique</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .logo {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-        }
-
-        .logo img {
-            height: 50px;
-        }
-
-        nav {
-            margin: 10px 0;
-        }
-
-        nav a {
-            margin: 0 15px;
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .content {
-            padding: 40px 20px;
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        h2 {
-            color: #444;
-            margin-top: 30px;
-            font-size: 2em;
-        }
-
-        h3 {
-            color: #666;
-            font-size: 1.5em;
-        }
-
-        p {
-            line-height: 1.6;
-        }
-
-        .intro {
-            margin-bottom: 40px;
-        }
-
-        .images {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-        }
-
-        .images img {
-            margin: 0 10px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .featured-products {
-            margin: 40px 0;
-        }
-
-        .product {
-            background-color: #fff;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .product img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .newsletter {
-            background-color: #333;
-            color: #fff;
-            padding: 30px 20px;
-            text-align: center;
-            border-radius: 10px;
-            margin: 40px 0;
-        }
-
-        .newsletter input[type="email"] {
-            padding: 10px;
-            width: 300px;
-            border: none;
-            border-radius: 5px;
-            margin-right: 10px;
-        }
-
-        .newsletter input[type="submit"] {
-            padding: 10px 20px;
-            background-color: #f96;
-            border: none;
-            color: #fff;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        .newsletter input[type="submit"]:hover {
-            background-color: #e85;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
-
-        footer a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+   
 </head>
 
 <body>
-    <header>
+    <div class="top-bar">
+        <div class="social-media">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="_images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="_images/facebook.webp" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="_images/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=0000000000" target="_blank">
+                <img src="_images/whatsapp.png" alt="WhatsApp">
+            </a>
+            <a href="mailto:info@groovemode.co.za">
+                <img src="_images/mail.png" alt="Email">
+            </a>
+        </div>
+        <div class="flag">
+            <img src="_images/SA.jpg" alt="South African Flag">
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="new-arrivals" onclick="location.href='new-arrivals.html'">New Arrivals</div>
+        <div class="shop-dropdown">
+            <div class="shop">Shop</div>
+            <div class="shop-dropdown-content">
+                <a href="tshirts.html">T-Shirts</a>
+                <a href="hoodies.html">Hoodies</a>
+                <a href="caps.html">Caps</a>
+                <a href="socks.html">Socks</a>
+            </div>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <input type="submit" value="Search">
+        </div>
+    </div>
+
+    <div class="logo-header">
         <div class="logo">
             <img src="_images/wear groove.jpg" alt="Groove Mode logo">
         </div>
-        <h1>Groove Mode Boutique</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="sales.html">Sales</a>
-            <a href="checkout.html">Checkout</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="about.html">About Us</a>
-        </nav>
-    </header>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sales.html">Sales</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+    </nav>
+
+    <div class="full-width-image">
+        <img src="_images/jackets-428622_640.jpg" alt="New Arrivals">
+        <div class="overlay">
+            <h2>NEW ARRIVALS!!!</h2>
+            <h3>SUMMER, WINTER, AND AUTUMN 2024</h3>
+            <button class="button">Shop Now</button>
+        </div>
+    </div>
 
     <div class="content">
         <div class="intro">
@@ -185,11 +86,6 @@
         <h2>[Breaking News] Latest Release from Groove Mode</h2>
         <h3>It's a Groovy Day!</h3>
 
-        <div class="images">
-            <img src="_images/_boutique_1280.jpg" alt="A picture of a groove mode boutique" style="width: 300px; height:auto;" />
-            <img src="_images/jackets-428622_640.jpg" alt="Clothes on sale" style="width: 300px; height:auto;" />
-        </div>
-
         <p>
             As a warm front brings cool and hot temperatures to the Western Cape, it's the perfect time to update your
             wardrobe with stylish clothing from Groove Mode Boutique. Our latest collection of summer shirts, caps, and
@@ -198,28 +94,39 @@
 
         <h3>Get Yourself a Groovy Shirt and Be Ready for All the Grooves to Come!</h3>
 
-        <div class="featured-products">
-            <h2>Featured Products</h2>
-
+        <div class="product-category">
             <div class="product">
-                <h3>Summer Vibes T-Shirt</h3>
-                <img src="_images/summer_tshirt.jpg" alt="Summer Vibes T-Shirt">
-                <p>
-                    Stay cool and stylish with our Summer Vibes T-Shirt, perfect for those sunny days out. Made with
-                    breathable fabric, it's a must-have for your wardrobe.
-                </p>
+                <h3>T-Shirt</h3>
+                <img src="_images/tshirt.jpg" alt="Summer Vibes T-Shirt">
+                <p>Stay cool and stylish with our Summer Vibes T-Shirt.</p>
                 <p><strong>Price:</strong> R500</p>
             </div>
 
             <div class="product">
-                <h3>Classic Groove Cap</h3>
-                <img src="_images/groove_cap.jpg" alt="Classic Groove Cap">
-                <p>
-                    Top off your look with our Classic Groove Cap. Available in various colors, this cap is the perfect
-                    accessory to complete your outfit.
-                </p>
+                <h3>Cap</h3>
+                <img src="_images/cap.jpg" alt="Classic Groove Cap">
+                <p>Top off your look with our Classic Groove Cap.</p>
                 <p><strong>Price:</strong> R250</p>
             </div>
+
+            <div class="product">
+                <h3>Hoodie</h3>
+                <img src="_images/hoody.jpg" alt="Warm Hoodie">
+                <p>Stay warm and stylish with our cozy hoodie.</p>
+                <p><strong>Price:</strong> R600</p>
+            </div>
+
+            <div class="product">
+                <h3>Socks</h3>
+                <img src="_images/socks.jpg" alt="Comfy Socks">
+                <p>Keep your feet warm and cozy with our comfortable socks.</p>
+                <p><strong>Price:</strong> R150</p>
+            </div>
+        </div>
+
+        <div class="sale-discount">
+            <img src="_images/sale.png" alt="Sale Promotion">
+            <img src="_images/discount.png" alt="Discount Promotion">
         </div>
 
         <div class="newsletter">
@@ -233,12 +140,18 @@
     </div>
 
     <footer>
+        <div class="logo">
+            <img src="_images/wear groove.jpg" alt="Groove Mode logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sales.html">Sales</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+            <a href="css_style_sheet.html">css_style_sheet</a>
+        </nav>
         <p>&copy; 2024 Groove Mode Boutique. All rights reserved.</p>
-        <a href="index.html">Home</a>
-        <a href="sales.html">Sales</a>
-        <a href="checkout.html">Checkout</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="about.html">About Us</a>
     </footer>
 </body>
 
