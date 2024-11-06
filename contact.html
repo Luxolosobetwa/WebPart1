@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - The Groove Mode</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-       
-    </style>
+    <script>
+        // JavaScript functions remain unchanged...
+    </script>
 </head>
 <body>
 
     <header>
-       
         Contact Us
     </header>
 
@@ -31,19 +30,19 @@
             <p>We value your feedback and are here to assist you with any inquiries, concerns, or support you may need. Whether you're looking for more information about our products, need assistance with your order, or just want to say hello, feel free to reach out to us through any of the methods below. Our team is dedicated to providing you with the best possible service.</p>
         </div>
 
-        <!-- Contact Information -->
+        <!-- Contact Information in Cards -->
         <div class="contact-info">
-            <div class="contact-section">
+            <div class="card contact-section">
                 <h3>Email Us</h3>
                 <p>For general inquiries, please email us at:</p>
                 <p><a href="mailto:support@groovemode.com">support@groovemode.com</a></p>
             </div>
-            <div class="contact-section">
+            <div class="card contact-section">
                 <h3>Call Us</h3>
                 <p>Our customer service team is available Monday to Friday, 9 AM to 5 PM:</p>
                 <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
             </div>
-            <div class="contact-section">
+            <div class="card contact-section">
                 <h3>Visit Our Store</h3>
                 <p>Come visit us at our physical location:</p>
                 <p>123 Groove Mode Street, Suite 100<br>City, State, 12345</p>
@@ -53,29 +52,41 @@
         <!-- Contact Form -->
         <div class="contact-form">
             <h2>Send Us a Message</h2>
-            <form action="#" method="post">
+            <form id="contact-form" action="mailto:support@groovemode.com" method="post" onsubmit="return validateForm()" enctype="text/plain">
                 <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <input type="text" id="name" name="name" value="Enter your name" required>
 
                 <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <input type="email" id="email" name="email" value="Enter your email" required>
+
+                <label for="phone">Your Phone Number:</label>
+                <input type="tel" id="phone" name="phone" value="Enter your phone number">
+
+                <label for="inquiry-type">Inquiry Type:</label>
+                <select id="inquiry-type" name="inquiry_type" required>
+                    <option value="">Select an option</option>
+                    <option value="Product Inquiry">Product Inquiry</option>
+                    <option value="Order Support">Order Support</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Feedback">Feedback</option>
+                </select>
+
+                <label for="service-interest">Service Interested In:</label>
+                <select id="service-interest" name="service_interest" required>
+                    <option value="">Select a service</option>
+                    <option value="T-Shirts">T-Shirts</option>
+                    <option value="Caps">Caps</option>
+                    <option value="Beanies">Beanies</option>
+                    <option value="Custom Orders">Custom Orders</option>
+                </select>
 
                 <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="6" placeholder="Enter your message" required></textarea>
+                <textarea id="message" name="message" rows="6" required>Enter your message</textarea>
 
                 <button type="submit">Submit</button>
             </form>
         </div>
     </div>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="sales.html">Sales</a>
-        <a href="checkout.html">Checkout</a>
-       
-        <a href="about.html">About Us</a>
-       
-    </nav>
 
     <footer>
         &copy; 2024 The Groove Mode | All Rights Reserved

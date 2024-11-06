@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Groove Mode Boutique</title>
+    <meta name="description" content="Groove Mode Boutique: Your go-to for fresh, stylish, and confident looks all year!">
+    <meta name="keywords" content="Groove Mode, fashion, boutique, South Africa, trendy clothing, t-shirts, hoodies, caps, socks">
+
     <link rel="stylesheet" href="style.css">
-   
 </head>
 
 <body>
@@ -51,7 +53,7 @@
     </div>
 
     <div class="logo-header">
-        <div class="logo">
+        <div class="logo" onclick="scrollToTop()">
             <img src="_images/wear groove.jpg" alt="Groove Mode logo">
         </div>
     </div>
@@ -69,7 +71,7 @@
         <div class="overlay">
             <h2>NEW ARRIVALS!!!</h2>
             <h3>SUMMER, WINTER, AND AUTUMN 2024</h3>
-            <button class="button">Shop Now</button>
+            <button class="button" onclick="location.href='shop.html'">Shop Now</button>
         </div>
     </div>
 
@@ -85,6 +87,9 @@
 
         <h2>[Breaking News] Latest Release from Groove Mode</h2>
         <h3>It's a Groovy Day!</h3>
+        .
+
+        <p>Check out our other <a href="sales.html">cozy hoodies</a> to complete your look!</p>
 
         <p>
             As a warm front brings cool and hot temperatures to the Western Cape, it's the perfect time to update your
@@ -97,28 +102,28 @@
         <div class="product-category">
             <div class="product">
                 <h3>T-Shirt</h3>
-                <img src="_images/tshirt.jpg" alt="Summer Vibes T-Shirt">
+                <img src="_images/summer-vibe_tshirt.jpg" alt=" picture of the Summer Vibes T-Shirt">
                 <p>Stay cool and stylish with our Summer Vibes T-Shirt.</p>
                 <p><strong>Price:</strong> R500</p>
             </div>
 
             <div class="product">
                 <h3>Cap</h3>
-                <img src="_images/cap.jpg" alt="Classic Groove Cap">
+                <img src="_images/new-release_cap.jpg" alt="picture of the Classic Groove Cap">
                 <p>Top off your look with our Classic Groove Cap.</p>
                 <p><strong>Price:</strong> R250</p>
             </div>
 
             <div class="product">
                 <h3>Hoodie</h3>
-                <img src="_images/hoody.jpg" alt="Warm Hoodie">
+                <img src="_images/Groovy-newly-release_hoody.jpg" alt="picture of a Warm Hoodie">
                 <p>Stay warm and stylish with our cozy hoodie.</p>
                 <p><strong>Price:</strong> R600</p>
             </div>
 
             <div class="product">
                 <h3>Socks</h3>
-                <img src="_images/socks.jpg" alt="Comfy Socks">
+                <img src="_images/Happy_socks.jpg" alt="a picture of a Socks">
                 <p>Keep your feet warm and cozy with our comfortable socks.</p>
                 <p><strong>Price:</strong> R150</p>
             </div>
@@ -140,7 +145,7 @@
     </div>
 
     <footer>
-        <div class="logo">
+        <div class="logo" onclick="scrollToTop()">
             <img src="_images/wear groove.jpg" alt="Groove Mode logo">
         </div>
         <nav>
@@ -149,10 +154,43 @@
             <a href="checkout.html">Checkout</a>
             <a href="contact.html">Contact Us</a>
             <a href="about.html">About Us</a>
-           
         </nav>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScdVngWxVIEEtZvJHIVifdBpoZfSqlzQVFhPmHut0RhwkOR9g/viewform?embedded=true" 
+        width="640" 
+        height="581"
+         frameborder="0"
+          marginheight="0" 
+          marginwidth="0">
+          Loading…
+        </iframe>
+    
+    
         <p>&copy; 2024 Groove Mode Boutique. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Toggle dropdown menu
+        document.querySelector('.shop').addEventListener('click', function () {
+            const dropdownContent = document.querySelector('.shop-dropdown-content');
+            dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Search bar functionality
+        document.querySelector('.search-bar input[type="submit"]').addEventListener('click', function () {
+            const query = document.querySelector('.search-bar input[type="text"]').value;
+            if (query) {
+                alert('You searched for: ' + query);
+            } else {
+                alert('Please enter a search term.');
+            }
+        });
+
+        // Scroll to the top when clicking the logo
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+       
+    </script>
 </body>
 
 </html>
